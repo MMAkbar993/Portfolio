@@ -194,11 +194,14 @@ section {
   color: var(--bg-color);
   z-index: 1;
   overflow: hidden;
-  transition: 0.5s;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 1rem rgba(0, 171, 240, 0.3);
 }
 
 .btn-box .btn:hover {
   color: var(--main-color);
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 2rem rgba(0, 171, 240, 0.5);
 }
 
 .btn-box .btn:nth-child(2) {
@@ -302,6 +305,22 @@ section {
   font-size: 5rem;
   margin-bottom: 3rem;
   text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 0.3rem;
+  background: var(--main-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
 span {
@@ -418,21 +437,28 @@ span {
   border-radius: 0.6rem;
   margin-bottom: 2rem;
   overflow: hidden;
+  transition: all 0.3s ease;
+  background: transparent;
 }
 
-.education-content .content ::before {
+.education-content .content::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 0px;
+  width: 0;
   height: 100%;
-  background: var(--second-bg-color);
+  background: linear-gradient(135deg, rgba(0, 171, 240, 0.1), transparent);
   z-index: -1;
   transition: 0.5s;
 }
 
-.education-content .content :hover:before {
+.education-content .content:hover {
+  transform: translateX(5px);
+  box-shadow: 0 0.5rem 2rem rgba(0, 171, 240, 0.2);
+}
+
+.education-content .content:hover::before {
   width: 100%;
 }
 
@@ -562,31 +588,61 @@ span {
   width: 50%;
 }
 
+.project {
+  background: var(--second-bg-color);
+}
+
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
   margin-top: 3rem;
 }
 
 .project-item {
-  background: var(--second-bg-color);
+  background: var(--bg-color);
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   border: 0.2rem solid var(--main-color);
-  transition: 0.5s ease;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 171, 240, 0.1), transparent);
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.project-item:hover::before {
+  width: 100%;
 }
 
 .project-item:hover {
   border-color: var(--text-color);
-  transform: scale(1.02);
+  transform: translateY(-8px);
+  box-shadow: 0 1.5rem 4rem rgba(0, 171, 240, 0.4);
 }
 
 .project-title {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: var(--main-color);
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.project-item:hover .project-title {
+  color: var(--text-color);
 }
 
 .project-item img {
@@ -595,16 +651,21 @@ span {
   object-fit: cover;
   border-radius: 0.8rem;
   border: 0.1rem solid var(--main-color);
-  transition: 0.3s ease;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .project-item:hover img {
   border-color: var(--text-color);
+  transform: scale(1.05);
 }
 
 .project-item a {
   display: block;
   text-decoration: none;
+  position: relative;
+  z-index: 1;
 }
 
 /* Keep the old project-img styles for backward compatibility */
@@ -621,9 +682,139 @@ span {
   border-radius: 10px;
 }
 
+/* Reviews Section Styles */
+.reviews {
+  min-height: auto;
+  padding-bottom: 7rem;
+  background: var(--bg-color);
+}
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.review-box {
+  background: var(--second-bg-color);
+  border-radius: 1.5rem;
+  padding: 3rem 2.5rem;
+  border: 0.2rem solid transparent;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.review-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 171, 240, 0.1), transparent);
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.review-box:hover::before {
+  width: 100%;
+}
+
+.review-box:hover {
+  border-color: var(--main-color);
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0, 171, 240, 0.3);
+}
+
+.review-content {
+  position: relative;
+  z-index: 1;
+}
+
+.stars {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.stars i {
+  font-size: 2rem;
+  color: #ffd700;
+  transition: 0.3s;
+}
+
+.review-box:hover .stars i {
+  transform: scale(1.1);
+}
+
+.review-text {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  font-style: italic;
+  position: relative;
+  padding-left: 2rem;
+}
+
+.review-text::before {
+  content: "\201C";
+  position: absolute;
+  left: 0;
+  top: -1rem;
+  font-size: 5rem;
+  color: var(--main-color);
+  opacity: 0.3;
+  font-family: Georgia, serif;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 0.1rem solid rgba(0, 171, 240, 0.2);
+}
+
+.reviewer-avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--main-color), #005a7d);
+  border: 0.2rem solid var(--main-color);
+  transition: 0.3s;
+}
+
+.review-box:hover .reviewer-avatar {
+  transform: rotate(360deg);
+}
+
+.reviewer-avatar i {
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+.reviewer-details h4 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 0.3rem;
+}
+
+.reviewer-details span {
+  font-size: 1.4rem;
+  color: var(--main-color);
+  font-weight: 400;
+}
+
 .contact {
   min-height: auto;
   padding-bottom: 7rem;
+  background: var(--second-bg-color);
 }
 
 .contact form {
@@ -652,14 +843,21 @@ span {
   padding: 1.5rem;
   font-size: 1.6rem;
   color: var(--text-color);
-  background: transparent;
+  background: rgba(17, 46, 66, 0.5);
   border-radius: 0.6rem;
   border: 0.2rem solid var(--main-color);
+  transition: all 0.3s ease;
+}
+
+.contact form .input-box .input-field input:focus,
+.contact form .textarea-field textarea:focus {
+  border-color: var(--text-color);
+  box-shadow: 0 0 1rem rgba(0, 171, 240, 0.3);
 }
 
 .contact form .input-box .input-field input::placeholder,
 .contact form .textarea-field textarea::placeholder {
-  color: var(--text-color);
+  color: rgba(237, 237, 237, 0.6);
 }
 
 .contact form .focus {
@@ -845,6 +1043,15 @@ span {
   .project-title {
     font-size: 1.8rem;
   }
+
+  .reviews-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .review-box {
+    padding: 2rem 1.5rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -898,6 +1105,19 @@ span {
 
   .project-item img {
     height: 150px;
+  }
+
+  .reviews-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .review-box {
+    padding: 1.5rem;
+  }
+
+  .review-text {
+    font-size: 1.4rem;
   }
 }
 

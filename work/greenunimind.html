@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GreenUniMind — AI-Powered Learning Platform | Muhammad Mujeeb Akbar</title>
+    <meta
+      name="description"
+      content="Case study: GreenUniMind, an AI-powered learning platform with Gemini AI, video processing and HLS streaming, Stripe payments and dashboards — built with React, TypeScript and Node.js."
+    />
+    <link rel="canonical" href="https://mmakbar.vercel.app/work/greenunimind" />
+    <meta name="author" content="Muhammad Mujeeb Akbar" />
+    <meta name="theme-color" content="#09090b" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Muhammad Mujeeb Akbar" />
+    <meta property="og:url" content="https://mmakbar.vercel.app/work/greenunimind" />
+    <meta property="og:title" content="GreenUniMind — AI-Powered Learning Platform" />
+    <meta
+      property="og:description"
+      content="Interactive learning, AI features, video streaming, payments and dashboards — a case study by Muhammad Mujeeb Akbar."
+    />
+    <meta property="og:image" content="https://mmakbar.vercel.app/images/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@MMAkbar348713" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts load without blocking first paint; system fonts show until they arrive. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" /></noscript>
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script>
+      (function (d, l) {
+        d.documentElement.classList.add("js");
+        if (/^(localhost|127\.0\.0\.1)$/.test(l.hostname) || /[?&]todo\b/.test(l.search)) {
+          d.documentElement.classList.add("show-todo");
+        }
+      })(document, location);
+    </script>
+    <script src="/js/main.js" defer></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "GreenUniMind",
+        "alternativeHeadline": "AI-Powered Learning Platform",
+        "description": "An AI-powered learning platform combining interactive education, video/media functionality, intelligent features, payments and user-facing dashboards.",
+        "url": "https://mmakbar.vercel.app/work/greenunimind",
+        "image": "https://mmakbar.vercel.app/images/work/greenunimind.webp",
+        "sameAs": "https://www.greenunimind.com/",
+        "contributor": { "@type": "Person", "name": "Muhammad Mujeeb Akbar", "url": "https://mmakbar.vercel.app/" },
+        "keywords": "React, TypeScript, Node.js, Gemini, Stripe, FFmpeg, Mux, HLS, Redux, React Query, Cloudinary"
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="container">
+        <a href="/" class="brand" aria-label="M M Akbar — home">
+          <span class="brand-mark" aria-hidden="true">MA</span>
+          M M Akbar
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu" data-nav-toggle>
+          <svg class="icon icon-menu" aria-hidden="true"><use href="/images/icons.svg#i-menu" /></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="/images/icons.svg#i-close" /></svg>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Main">
+          <ul class="nav-links">
+            <li><a href="/#work" aria-current="true">Work</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#testimonials">Testimonials</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+          <a href="/#contact" class="btn btn--primary btn--sm">Discuss Your Project</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 1. Project hero -->
+      <section class="cs-hero">
+        <div class="container">
+          <a href="/#work" class="back-link">
+            <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-arrow-left" /></svg>
+            All work
+          </a>
+          <p class="eyebrow">03 / Case study</p>
+          <h1>GreenUniMind</h1>
+          <p class="lead">
+            <strong>AI-Powered Learning Platform.</strong>
+            An AI-powered learning platform combining interactive education, video/media functionality, intelligent
+            features, payments and user-facing dashboards.
+          </p>
+
+          <dl class="cs-meta">
+            <div>
+              <dt>Role</dt>
+              <dd>Full-stack developer (end to end)</dd>
+            </div>
+            <div>
+              <dt>Category</dt>
+              <dd>Sustainability EdTech</dd>
+            </div>
+            <div>
+              <dt>Core stack</dt>
+              <dd>React · TypeScript · Node.js</dd>
+            </div>
+            <div>
+              <dt>Live website</dt>
+              <dd>
+                <a href="https://www.greenunimind.com/" target="_blank" rel="noopener">
+                  greenunimind.com
+                  <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+                </a>
+              </dd>
+            </div>
+          </dl>
+
+          <div class="cs-cover">
+            <div class="frame">
+              <div class="frame-bar">
+                <div class="frame-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="frame-url">greenunimind.com</div>
+              </div>
+              <img
+                src="/images/work/greenunimind.webp"
+                srcset="/images/work/greenunimind-800.webp 800w, /images/work/greenunimind.webp 1440w"
+                sizes="(max-width: 1240px) 94vw, 1180px"
+                width="1440"
+                height="825"
+                fetchpriority="high"
+                decoding="async"
+                alt="GreenUniMind homepage with navigation for categories, courses, certifications, blog and impact, and the 'Discover Sustainable Learning' hero"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="cs-layout">
+          <nav class="cs-toc" aria-label="On this page">
+            <p>On this page</p>
+            <ol>
+              <li><a href="#overview">Overview</a></li>
+              <li><a href="#problem">The problem</a></li>
+              <li><a href="#solution">The solution</a></li>
+              <li><a href="#contribution">My contribution</a></li>
+              <li><a href="#features">Key features</a></li>
+              <li><a href="#architecture">Architecture</a></li>
+              <li><a href="#stack">Technology stack</a></li>
+              <li><a href="#screenshots">Screenshots</a></li>
+              <li><a href="#decisions">Engineering decisions</a></li>
+            </ol>
+          </nav>
+
+          <article class="cs-content">
+            <section class="cs-section" id="overview">
+              <h2><span class="num">01</span>Overview</h2>
+              <p>
+                GreenUniMind — "Learn Green. Live Better." — is an online learning platform for sustainability and
+                environmental education. Learners browse course categories, enrol in free and paid courses, learn
+                through video lessons, track their progress and earn certifications they can share with employers.
+              </p>
+              <p>
+                Instructors publish their own courses, with AI features that help them write and improve course
+                content.
+              </p>
+            </section>
+
+            <section class="cs-section" id="problem">
+              <h2><span class="num">02</span>The problem</h2>
+              <p>
+                A modern learning product needs much more than pages of content: reliable video that plays well on any
+                connection, secure payments, useful AI features and dashboards that show progress. Each of those is its
+                own engineering problem, and they all have to work together.
+              </p>
+            </section>
+
+            <section class="cs-section" id="solution">
+              <h2><span class="num">03</span>The solution</h2>
+              <p>
+                A React and TypeScript frontend backed by a Node.js API, with specialised services for each hard
+                problem: FFmpeg and Mux for video processing and HLS streaming, Cloudinary for media, Stripe for
+                payments and Google Gemini for AI features — all deployed on VPS infrastructure.
+              </p>
+              <div class="workflow" role="img" aria-label="GreenUniMind platform: learning, AI features, video streaming, media, payments and dashboards">
+              <div class="workflow-head">
+                <span>Platform map</span>
+                <span>greenunimind.com</span>
+              </div>
+              <ol class="workflow-steps">
+                <li class="workflow-step"><strong>Learning</strong><span>Interactive education</span></li>
+                <li class="workflow-step"><strong>AI</strong><span>Google Gemini</span></li>
+                <li class="workflow-step"><strong>Video</strong><span>FFmpeg processing, Mux &amp; HLS streaming</span></li>
+                <li class="workflow-step"><strong>Media</strong><span>Cloudinary</span></li>
+                <li class="workflow-step"><strong>Payments</strong><span>Stripe</span></li>
+                <li class="workflow-step workflow-step--end"><strong>Dashboards</strong><span>Charts &amp; PDF generation</span></li>
+              </ol>
+              <div class="workflow-foot">
+                <span class="chip chip--mono">React</span>
+                <span class="chip chip--mono">TypeScript</span>
+                <span class="chip chip--mono">Node.js</span>
+                <span class="chip chip--mono">Redux</span>
+                <span class="chip chip--mono">React Query</span>
+                <span class="chip chip--mono">VPS</span>
+              </div>
+            </div>
+            </section>
+
+            <section class="cs-section" id="contribution">
+              <h2><span class="num">04</span>My contribution</h2>
+              <p>I built the platform end to end — frontend, backend, media pipeline and deployment — including:</p>
+              <ul class="cs-list">
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg><span><strong>Frontend</strong> in React and TypeScript, with Redux and React Query for application state and data fetching.</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg><span><strong>AI features</strong> using Google Generative AI (Gemini).</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg><span><strong>Video pipeline</strong> with FFmpeg, Mux and HLS streaming.</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg><span><strong>Payments</strong> with Stripe and <strong>media</strong> with Cloudinary.</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg><span><strong>Dashboards</strong> with charts and PDF generation.</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg><span><strong>Deployment</strong> on VPS infrastructure.</span></li>
+              </ul>
+            </section>
+
+            <section class="cs-section" id="features">
+              <h2><span class="num">05</span>Key features</h2>
+              <div class="feature-grid">
+                <div class="feature">
+                  <h3>Course marketplace</h3>
+                  <p>Categories, beginner and advanced levels, free and paid courses, a cart and enrolment.</p>
+                </div>
+                <div class="feature">
+                  <h3>AI Enhance for instructors</h3>
+                  <p>AI built on Google Gemini that automatically improves a course's description.</p>
+                </div>
+                <div class="feature">
+                  <h3>Certifications</h3>
+                  <p>Certificates learners can share on LinkedIn, on resumes and with employers.</p>
+                </div>
+                <div class="feature">
+                  <h3>Progress tracking</h3>
+                  <p>Progress indicators that show each learner how far they've come.</p>
+                </div>
+                <div class="feature">
+                  <h3>Video streaming</h3>
+                  <p>Uploaded video processed with FFmpeg and streamed as HLS via Mux.</p>
+                </div>
+                <div class="feature">
+                  <h3>Payments</h3>
+                  <p>Checkout and payments handled with Stripe.</p>
+                </div>
+                <div class="feature">
+                  <h3>Dashboards &amp; PDFs</h3>
+                  <p>User-facing dashboards with charts, and PDF generation from platform data.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="cs-section" id="architecture">
+              <h2><span class="num">06</span>Technical architecture</h2>
+              <div class="arch">
+                <div class="arch-layer"><span>Frontend</span><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span></div></div>
+                <div class="arch-layer"><span>State &amp; data</span><div class="chips"><span class="chip">Redux</span><span class="chip">React Query</span></div></div>
+                <div class="arch-layer"><span>Backend</span><div class="chips"><span class="chip">Node.js</span></div></div>
+                <div class="arch-layer"><span>AI</span><div class="chips"><span class="chip">Google Gemini</span></div></div>
+                <div class="arch-layer"><span>Video &amp; media</span><div class="chips"><span class="chip">FFmpeg</span><span class="chip">Mux</span><span class="chip">HLS</span><span class="chip">Cloudinary</span></div></div>
+                <div class="arch-layer"><span>Payments</span><div class="chips"><span class="chip">Stripe</span></div></div>
+                <div class="arch-layer"><span>Infrastructure</span><div class="chips"><span class="chip">VPS deployment</span></div></div>
+              </div>
+              <p class="todo todo-note">TODO: add the database you used.</p>
+            </section>
+
+            <section class="cs-section" id="stack">
+              <h2><span class="num">07</span>Technology stack</h2>
+              <ul class="chips">
+                <li class="chip">React</li>
+                <li class="chip">TypeScript</li>
+                <li class="chip">Node.js</li>
+                <li class="chip">Gemini AI</li>
+                <li class="chip">Stripe</li>
+                <li class="chip">Cloudinary</li>
+                <li class="chip">FFmpeg</li>
+                <li class="chip">Mux</li>
+                <li class="chip">HLS</li>
+                <li class="chip">Redux</li>
+                <li class="chip">React Query</li>
+                <li class="chip">Charts</li>
+                <li class="chip">PDF generation</li>
+              </ul>
+            </section>
+
+            <section class="cs-section" id="screenshots">
+              <h2><span class="num">08</span>Product screenshots</h2>
+              <figure class="cs-shots">
+                <div class="frame">
+                  <div class="frame-bar">
+                    <div class="frame-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <div class="frame-url">greenunimind.com</div>
+                  </div>
+                  <img
+                    src="/images/work/greenunimind-features-800.webp"
+                    srcset="/images/work/greenunimind-features-800.webp 800w, /images/work/greenunimind-features.webp 1440w"
+                    sizes="(max-width: 900px) 94vw, 760px"
+                    width="1440"
+                    height="1013"
+                    loading="lazy"
+                    decoding="async"
+                    alt="GreenUniMind 'AI-Powered Sustainability Education' section with cards for personalized eco learning, expert green feedback and impact progress tracking"
+                  />
+                </div>
+                <figcaption>How the platform presents personalised learning, feedback and progress tracking.</figcaption>
+              </figure>
+              <p class="todo todo-note">
+                TODO (optional): add screenshots of a lesson/video player and the learner or instructor dashboard.
+              </p>
+            </section>
+
+            <section class="cs-section" id="decisions">
+              <h2><span class="num">09</span>Engineering decisions</h2>
+              <ul class="cs-list">
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg><span><strong>Adaptive streaming.</strong> Video is processed into HLS so playback adapts to each learner's connection.</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg><span><strong>Managed services for hard problems.</strong> Stripe, Mux and Cloudinary handle payments, streaming and media, so product work stays focused on learning features.</span></li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg><span><strong>Clear state management.</strong> Redux for application state and React Query for server data and caching.</span></li>
+              </ul>
+              <p class="todo todo-note">TODO: add one or two real challenges you solved (e.g. video processing on a VPS).</p>
+            </section>
+          </article>
+        </div>
+
+        <!-- 11. Live website CTA -->
+        <div class="cta-band">
+          <div>
+            <h2>See GreenUniMind live</h2>
+            <p>Building a product with AI, video or payments? Let's talk about the technical approach.</p>
+          </div>
+          <div class="actions">
+            <a href="https://www.greenunimind.com/" class="btn btn--primary" target="_blank" rel="noopener">
+              Visit GreenUniMind
+              <svg class="icon icon--diag" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+            </a>
+            <a href="/#contact" class="btn btn--secondary">Discuss Your Project</a>
+          </div>
+        </div>
+
+        <!-- 12. Next project -->
+        <div class="cs-next">
+          <a href="/#work" class="back-link">
+            <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-arrow-left" /></svg>
+            All work
+          </a>
+          <div>
+            <span>Next project</span>
+            <a href="/work/concord-deal">
+              Concord Deal
+              <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-arrow-right" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer site-footer--mini">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>&copy; <span data-year>2026</span> Muhammad Mujeeb Akbar</p>
+          <ul class="footer-links">
+            <li><a href="https://github.com/MMAkbar993" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/m-m-akbar/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li data-link-item="fiverr" hidden><a href="#" data-link="fiverr" target="_blank" rel="noopener">Fiverr</a></li>
+            <li data-link-item="email" hidden><a href="#" data-link="email">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

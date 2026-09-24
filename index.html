@@ -1,548 +1,1033 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M M Akbar</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muhammad Mujeeb Akbar | Full-Stack SaaS Developer</title>
+    <meta
+      name="description"
+      content="Full-stack developer specializing in SaaS platforms, CRM systems, Next.js, React, Node.js, Supabase and AI-powered business applications."
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="canonical" href="https://mmakbar.vercel.app/" />
+    <meta name="author" content="Muhammad Mujeeb Akbar" />
+    <meta name="theme-color" content="#09090b" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Muhammad Mujeeb Akbar" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://mmakbar.vercel.app/" />
+    <meta property="og:title" content="Muhammad Mujeeb Akbar | Full-Stack SaaS Developer" />
+    <meta
+      property="og:description"
+      content="I build, fix and improve production web applications — SaaS products, CRMs and AI-powered business systems."
+    />
+    <meta property="og:image" content="https://mmakbar.vercel.app/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Muhammad Mujeeb Akbar — Full-Stack SaaS Developer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@MMAkbar348713" />
+    <meta name="twitter:title" content="Muhammad Mujeeb Akbar | Full-Stack SaaS Developer" />
+    <meta
+      name="twitter:description"
+      content="I build, fix and improve production web applications — SaaS products, CRMs and AI-powered business systems."
+    />
+    <meta name="twitter:image" content="https://mmakbar.vercel.app/images/og-image.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts load without blocking first paint; system fonts show until they arrive. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" /></noscript>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preload" as="image" href="/images/work/concord-deal-800.webp" type="image/webp" />
+
+    <script>
+      (function (d, l) {
+        d.documentElement.classList.add("js");
+        if (/^(localhost|127\.0\.0\.1)$/.test(l.hostname) || /[?&]todo\b/.test(l.search)) {
+          d.documentElement.classList.add("show-todo");
+        }
+      })(document, location);
+    </script>
+    <script src="/js/main.js" defer></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://mmakbar.vercel.app/#person",
+            "name": "Muhammad Mujeeb Akbar",
+            "alternateName": "M M Akbar",
+            "url": "https://mmakbar.vercel.app/",
+            "image": "https://mmakbar.vercel.app/images/profile.webp",
+            "jobTitle": "Full-Stack SaaS Developer",
+            "description": "Full-stack developer specializing in SaaS platforms, CRM systems, Next.js, React, Node.js, Supabase and AI-powered business applications.",
+            "knowsAbout": [
+              "SaaS development",
+              "CRM systems",
+              "Next.js",
+              "React",
+              "TypeScript",
+              "Node.js",
+              "Supabase",
+              "PostgreSQL",
+              "MongoDB",
+              "AI integrations",
+              "API integrations"
+            ],
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Southern Punjab Redeemers College"
+            },
+            "sameAs": [
+              "https://www.linkedin.com/in/m-m-akbar/",
+              "https://github.com/MMAkbar993",
+              "https://twitter.com/MMAkbar348713",
+              "https://www.fiverr.com/s/qbDVrj5"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mmakbar.vercel.app/#website",
+            "url": "https://mmakbar.vercel.app/",
+            "name": "Muhammad Mujeeb Akbar — Full-Stack SaaS Developer",
+            "publisher": { "@id": "https://mmakbar.vercel.app/#person" }
+          },
+          {
+            "@type": "ItemList",
+            "name": "Selected work",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "url": "https://mmakbar.vercel.app/work/concord-deal", "name": "Concord Deal" },
+              { "@type": "ListItem", "position": 2, "url": "https://mmakbar.vercel.app/work/linkdexing", "name": "Linkdexing" },
+              { "@type": "ListItem", "position": 3, "url": "https://mmakbar.vercel.app/work/greenunimind", "name": "GreenUniMind" }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
-    <!-- header design -->
-    <header class="header">
-      <a href="" class="logo"
-        >M M Akbar.<span class="animate" style="--i: 1"></span
-      ></a>
-      <div class="bx bx-menu" id="menu-icon">
-        <span class="animate" style="--i: 3"></span>
-      </div>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact">Contact</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <span class="active-nav"></span>
-        <span class="animate" style="--i: 2"></span>
-      </nav>
+    <!-- ============================== Header ============================== -->
+    <header class="site-header" data-header>
+      <div class="container">
+        <a href="/" class="brand" aria-label="M M Akbar — home">
+          <span class="brand-mark" aria-hidden="true">MA</span>
+          M M Akbar
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Open menu"
+          data-nav-toggle
+        >
+          <svg class="icon icon-menu" aria-hidden="true"><use href="/images/icons.svg#i-menu" /></svg>
+          <svg class="icon icon-close" aria-hidden="true"><use href="/images/icons.svg#i-close" /></svg>
+        </button>
+
+        <nav class="nav" id="site-nav" aria-label="Main">
+          <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--sm">Discuss Your Project</a>
+        </nav>
+      </div>
     </header>
 
-    <!-- home section design -->
-    <section class="home home-animate" id="home">
-      <div class="home-content">
-        <h1>Hi, I'm <span>Muhammad Mujeeb Akbar</span></h1>
-        <div class="text-animation">
-          <h3>website Developer</h3>
-        </div>
-        <p>
-          I'm Muhammad Mujeeb Akbar, a  web developer and WordPress
-          developer with over 5 years of experience in building beautiful and
-          responsive websites. I specialize in HTML, CSS, JavaScript, Node.js, Express.js, Next.js, MongoDB, Tailwind CSS, WordPress,
-          and Bootstrap.
-        </p>
+    <main id="main">
+      <!-- ============================== Hero ============================== -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="hero-badge"><span class="pill">Full-Stack</span> SaaS Developer<span class="badge-extra">· Next.js, React, Node.js &amp; Supabase</span></p>
 
-        <div class="btn-box">
-          <a
-            href="#"
-            target="_blank"
-            class="btn"
-            >Hire Me</a
-          >
-          <a
-            href="https://wa.me/message/QE7R322HXVBQM1"
-            target="_blank"
-            class="btn"
-            >Let's Talk</a
-          >
-        </div>
-      </div>
-      <div class="home-sci">
-        <a
-          href="https://www.instagram.com/invites/contact/?i=1nhisq27lotqe&utm_content=mex7qqs"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-        <a
-          href="https://twitter.com/MMAkbar348713?t=2UYhDe1dIlxZnnViLc5slQ&s=09"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/m-m-akbar/" target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-      </div>
-      <div class="home-imghover"></div>
-    </section>
+            <h1 id="hero-title">
+              I build <span class="accent">SaaS products, CRMs</span> &amp; AI-powered business systems
+            </h1>
 
-    <!-- about section design -->
-
-    <section class="about" id="about">
-      <h2 class="heading">About <span>Me</span></h2>
-
-      <div class="about-img">
-        <img src="images/profile-pic (10).png" alt="" />
-        <span class="circle-span"></span>
-      </div>
-      <div class="about-content">
-        <h3>Website Developer!</h3>
-        <p>
-          Hi, I'm Muhammad Mujeeb Akbar, a web developer and WordPress
-          developer. I have experience in building responsive and user-friendly
-          websites using HTML, CSS, JavaScript,Node Js,Express Js,Next Js,MongoDB,Tailwind Css and WordPress. I am passionate
-          about creating beautiful and functional websites that can help
-          businesses achieve their goals. My goal is to provide high-quality and
-          reliable web development services to my clients.
-        </p>
-
-        <div class="btn-box btns">
-          <a
-            href="https://www.linkedin.com/in/m-m-akbar/"
-            target="_blank"
-            class="btn"
-            >Read More</a
-          >
-        </div>
-      </div>
-    </section>
-
-     <!-- project section -->
-    <section class="project" id="project">
-      <h2 class="heading">My <span>Projects</span></h2>
-      <div class="project-container">
-        <div class="project-item">
-          <h3 class="project-title">College Website</h3>
-          <a href="https://www.sprc.edu.pk/" target="_blank">
-            <img src="images/SPRC.png" alt="College Website" />
-          </a>
-        </div>
-        
-        <div class="project-item">
-          <h3 class="project-title">Social Media App</h3>
-          <a href="https://social-media-roan-nine.vercel.app/" target="_blank">
-            <img src="images/Tech-Project - Google Chrome 8_7_2025 11_44_42 PM.png" alt="E-Commerce Platform" />
-          </a>
-        </div>
-        
-        <div class="project-item">
-          <h3 class="project-title">Task Management System</h3>
-          <a href="https://algorethics-ai-sandbox.vercel.app/" target="_blank">
-            <img src="images/Tech-Project - Google Chrome 8_7_2025 11_44_57 PM.png" alt="Portfolio Website" />
-          </a>
-        </div>
-        
-        <div class="project-item">
-          <h3 class="project-title">Landing page</h3>
-          <a href="https://landing-pi-lovat.vercel.app/" target="_blank">
-            <img src="images/Tech-Project - Google Chrome 8_7_2025 11_45_02 PM.png" alt="Blog Application" />
-          </a>
-        </div>
-        
-        <div class="project-item">
-          <h3 class="project-title">E-Commerce Platform </h3>
-          <a href="https://e-commerce-nine-virid.vercel.app/" target="_blank">
-            <img src="images/Tech-Project - Google Chrome 8_7_2025 11_45_08 PM.png" alt="Task Management System" />
-          </a>
-        </div>
-        
-        <div class="project-item">
-          <h3 class="project-title">Dashboard</h3>
-          <a href="https://loanbox.vercel.app/" target="_blank">
-            <img src="images/Tech-Project - Google Chrome 8_7_2025 11_45_15 PM.png" alt="Weather Dashboard" />
-          </a>
-        </div>
-        
-        <div class="project-item">
-          <h3 class="project-title">Blog Application</h3>
-          <a href="https://kolla-iota.vercel.app/" target="_blank">
-            <img src="images/Tech-Project - Google Chrome 8_7_2025 11_45_23 PM.png" alt="Social Media App" />
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="education" id="education">
-      <h2 class="heading">My <span>Journey</span></h2>
-      <div class="education-row">
-        <div class="education-column">
-          <h3 class="title">Education</h3>
-          <div class="education-box">
-            <div class="education-content">
-              <div class="content">
-                <div class="year">
-                  <i class="bx bxs-calendar"></i> 2018 - 2019
-                </div>
-                <h3>matriculation</h3>
-                <p>
-                  I am a high-achieving student with an A+ grade in
-                  matriculation. I am dedicated to academic excellence and eager
-                  to pursue higher education and make a positive impact on the
-                  world.
-                </p>
-              </div>
-            </div>
-
-            <div class="education-content">
-              <div class="content">
-                <div class="year">
-                  <i class="bx bxs-calendar"></i> 2019 - 2021
-                </div>
-                <h3>Intermediate</h3>
-                <p>
-                  I am a high-achieving student with an A+ grade in
-                  Intermediate. I am dedicated to academic excellence and eager
-                  to pursue higher education and make a positive impact on the
-                  world.
-                </p>
-              </div>
-            </div>
-            <div class="education-content">
-              <div class="content">
-                <div class="year">
-                  <i class="bx bxs-calendar"></i> 2021 - 2025
-                </div>
-                <h3>Bs IT - SPRC</h3>
-                <p>
-                  As a student pursuing a Bachelor of Science in Information
-                  Technology (Bs IT), I am committed to honing my skills and
-                  expanding my knowledge in the field of technology. With
-                  expertise in HTML, CSS, JavaScript, and WordPress development,
-                  I specialize in crafting visually appealing and functional
-                  websites that provide seamless user experiences..
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- education section design -->
-        <div class="education-column">
-          <h3 class="title">Experience</h3>
-          <div class="education-box">
-            <div class="education-content">
-              <div class="content">
-                <div class="year">
-                  <i class="bx bxs-calendar"></i>
-                </div>
-                <h3>web Developer</h3>
-                <p>
-                  I have gained experience in front-end development on Fiverr,
-                  creating responsive web pages using HTML, CSS, and JavaScript.
-                  I have expertise in frameworks like Bootstrap and Foundation.
-                </p>
-              </div>
-            </div>
-            <div class="education-content">
-              <div class="content">
-                <div class="year">
-                  <i class="bx bxs-calendar"></i>
-                </div>
-                <h3>WordPress Developer</h3>
-                <p>
-                  I have extensive experience as a WordPress Developer on
-                  Fiverr, specializing in website development, theme
-                  customization, and plugin integration. I deliver high-quality,
-                  visually appealing websites with seamless user experiences.
-                </p>
-              </div>
-            </div>
-            <div class="education-content">
-              <div class="content">
-                <div class="year">
-                  <i class="bx bxs-calendar"></i>
-                </div>
-                <h3>.Net Developer</h3>
-                <p>
-                  I am an experienced and dedicated .NET developer with
-                  expertise in C#, ASP.NET, and software development. I excel in
-                  problem-solving, collaboration, and delivering high-quality
-                  solutions on time.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Skills section design -->
-    <section class="skills" id="skills">
-      <h2 class="heading">My <span>Skills</span></h2>
-
-      <div class="skills-row">
-        <div class="skills-column">
-          <h3 class="title">Coding skills</h3>
-
-          <div class="skills-box">
-            <div class="skills-content">
-              <div class="progress">
-                <h3>HTML <span>90%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-
-              <div class="progress">
-                <h3>CSS <span>80%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-
-              <div class="progress">
-                <h3>JavaScript <span>65%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-
-              <div class="progress">
-                <h3>Node Js <span>50%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills-column">
-          <h3 class="title">Professional skills</h3>
-
-          <div class="skills-box">
-            <div class="skills-content">
-              <div class="progress">
-                <h3>Web Development<span>90%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-
-              <div class="progress">
-                <h3>WordPress<span>80%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-
-              <div class="progress">
-                <h3>Frontend web development<span>65%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-
-              <div class="progress">
-                <h3>Backend development <span>75%</span></h3>
-                <div class="bar"><span></span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- reviews section design -->
-    <section class="reviews" id="reviews">
-      <h2 class="heading">Client <span>Reviews</span></h2>
-      <div class="reviews-container">
-        <div class="review-box">
-          <div class="review-content">
-            <div class="stars">
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-            </div>
-            <p class="review-text">
-              "Muhammad delivered exceptional work on our college website. His attention to detail and technical expertise made the entire process smooth. The website is beautiful, fast, and exactly what we needed!"
+            <p class="hero-copy">
+              I'm <strong>Muhammad Mujeeb Akbar</strong>, a full-stack developer specializing in modern SaaS
+              applications. I help businesses build, fix and improve production web applications — from internal CRMs
+              to customer-facing platforms.
             </p>
-            <div class="reviewer-info">
-              <div class="reviewer-avatar">
-                <i class='bx bxs-user-circle'></i>
+
+            <div class="hero-actions">
+              <a href="#work" class="btn btn--primary">
+                View My Work
+                <svg class="icon icon--nudge" aria-hidden="true"><use href="/images/icons.svg#i-arrow-right" /></svg>
+              </a>
+              <a href="#contact" class="btn btn--secondary">Discuss Your Project</a>
+            </div>
+
+            <ul class="hero-stack" aria-label="Core technologies">
+              <li>Next.js</li>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>Supabase</li>
+              <li>PostgreSQL</li>
+              <li>AI</li>
+            </ul>
+          </div>
+
+          <!-- Product visual built from real screenshots of the live flagship projects. -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="frame frame--main">
+              <div class="frame-bar">
+                <div class="frame-dots"><i></i><i></i><i></i></div>
+                <div class="frame-url">concorddeal.com</div>
               </div>
-              <div class="reviewer-details">
-                <h4>Sarah Johnson</h4>
-                <span>College Administrator</span>
+              <img
+                src="/images/work/concord-deal-800.webp"
+                srcset="/images/work/concord-deal-800.webp 800w, /images/work/concord-deal.webp 1440w"
+                sizes="(max-width: 980px) 92vw, 540px"
+                width="1440"
+                height="800"
+                alt=""
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+            <div class="frame frame--secondary">
+              <div class="frame-bar">
+                <div class="frame-dots"><i></i><i></i><i></i></div>
+                <div class="frame-url">linkdexing</div>
               </div>
+              <img src="/images/work/linkdexing-800.webp" width="800" height="383" alt="" decoding="async" />
+            </div>
+            <div class="flow-card">
+              <p class="flow-card-title">Concord · deal flow</p>
+              <ol class="flow-steps">
+                <li>CRM</li>
+                <li>Listing</li>
+                <li>Marketplace</li>
+                <li>Buyer</li>
+                <li>NDA</li>
+                <li>Data Room</li>
+                <li>Deal Pipeline</li>
+              </ol>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="review-box">
-          <div class="review-content">
-            <div class="stars">
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
+      <!-- ============================== Credibility strip ============================== -->
+      <section class="trust" aria-labelledby="trust-title">
+        <h2 id="trust-title" class="sr-only">What I bring to a project</h2>
+        <div class="container">
+          <ul class="trust-list">
+            <li class="trust-item">
+              <span class="trust-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-server" /></svg></span>
+              <div>
+                <h3>Production SaaS</h3>
+                <p>Live platforms with real users</p>
+              </div>
+            </li>
+            <li class="trust-item">
+              <span class="trust-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-layers" /></svg></span>
+              <div>
+                <h3>Full-Stack Development</h3>
+                <p>Interfaces, APIs, data and deployment</p>
+              </div>
+            </li>
+            <li class="trust-item">
+              <span class="trust-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-dashboard" /></svg></span>
+              <div>
+                <h3>CRM Systems</h3>
+                <p>Pipelines, roles and dashboards</p>
+              </div>
+            </li>
+            <li class="trust-item">
+              <span class="trust-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-plug" /></svg></span>
+              <div>
+                <h3>AI Integrations</h3>
+                <p>Claude and Gemini in real products</p>
+              </div>
+            </li>
+            <li class="trust-item">
+              <span class="trust-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-workflow" /></svg></span>
+              <div>
+                <h3>Business Automation</h3>
+                <p>Documents, workflows and bulk jobs</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================== Selected work ============================== -->
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <div class="section-head section-head--split reveal">
+            <div>
+              <p class="eyebrow">Flagship work</p>
+              <h2 id="work-title" class="h2">Selected Work</h2>
+              <p class="lead">Production applications and business systems I've built end to end.</p>
             </div>
-            <p class="review-text">
-              "Outstanding developer! Muhammad built our e-commerce platform with great professionalism. The site is responsive, user-friendly, and has significantly improved our online sales. Highly recommend!"
+            <a href="#contact" class="text-link text-link--muted">
+              Discuss a similar project
+              <svg class="icon icon--nudge" aria-hidden="true"><use href="/images/icons.svg#i-arrow-right" /></svg>
+            </a>
+          </div>
+
+          <div class="cases">
+            <!-- 01 — Concord Deal (featured) -->
+            <article class="case case--featured reveal" aria-labelledby="case-concord">
+              <div class="case-media">
+                <div class="frame">
+                  <div class="frame-bar">
+                    <div class="frame-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <div class="frame-url">concorddeal.com</div>
+                  </div>
+                  <img
+                    src="/images/work/concord-deal.webp"
+                    srcset="/images/work/concord-deal-800.webp 800w, /images/work/concord-deal.webp 1440w"
+                    sizes="(max-width: 1180px) 90vw, 1040px"
+                    width="1440"
+                    height="800"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Concord Deal homepage: a confidential business-for-sale marketplace with listing search, NDA-protected and recast-financials badges, and a featured listing"
+                  />
+                </div>
+              </div>
+              <div class="case-body">
+                <div>
+                  <p class="case-meta"><span class="num">01 / Featured case study</span></p>
+                  <h3 id="case-concord">Concord Deal</h3>
+                  <p class="case-type">Business Brokerage CRM &amp; AI SaaS</p>
+                  <p class="case-summary">
+                    A full-stack business brokerage platform combining CRM workflows, business listings, buyer/seller
+                    management, secure document workflows, financial processing and AI-powered automation.
+                  </p>
+                  <div class="case-actions">
+                    <a href="/work/concord-deal" class="btn btn--primary btn--sm">
+                      View Case Study
+                      <svg class="icon icon--nudge" aria-hidden="true"><use href="/images/icons.svg#i-arrow-right" /></svg>
+                    </a>
+                    <a href="https://concorddeal.com/" class="text-link text-link--muted" target="_blank" rel="noopener">
+                      Live Website
+                      <svg class="icon icon--diag" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="case-aside">
+                  <p class="case-label">Core workflow</p>
+                  <ol class="pipeline" aria-label="CRM, Listing, Marketplace, Buyer, NDA, Data Room, Deal Pipeline">
+                    <li><span class="chip">CRM</span></li>
+                    <li><span class="chip">Listing</span></li>
+                    <li><span class="chip">Marketplace</span></li>
+                    <li><span class="chip">Buyer</span></li>
+                    <li><span class="chip">NDA</span></li>
+                    <li><span class="chip">Data Room</span></li>
+                    <li><span class="chip">Deal Pipeline</span></li>
+                  </ol>
+                  <p class="case-label">Stack</p>
+                  <ul class="chips" aria-label="Technologies">
+                    <li class="chip">Next.js</li>
+                    <li class="chip">React</li>
+                    <li class="chip">TypeScript</li>
+                    <li class="chip">Supabase</li>
+                    <li class="chip">PostgreSQL</li>
+                    <li class="chip">Row Level Security</li>
+                    <li class="chip">Claude AI</li>
+                    <li class="chip">PDF &amp; Excel processing</li>
+                    <li class="chip">E2E testing</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- 02 — Linkdexing -->
+            <article class="case reveal" aria-labelledby="case-linkdexing">
+              <div class="case-media">
+                <div class="frame">
+                  <div class="frame-bar">
+                    <div class="frame-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <div class="frame-url">linkdexing-f.vercel.app</div>
+                  </div>
+                  <img
+                    src="/images/work/linkdexing-800.webp"
+                    srcset="/images/work/linkdexing-800.webp 800w, /images/work/linkdexing.webp 1440w"
+                    sizes="(max-width: 980px) 90vw, 560px"
+                    width="1440"
+                    height="690"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Linkdexing homepage: backlink indexing service with sign-up call to action and credit-based pricing panel"
+                  />
+                </div>
+              </div>
+              <div class="case-body">
+                <p class="case-meta"><span class="num">02</span><span>SEO Indexing &amp; Automation SaaS</span></p>
+                <h3 id="case-linkdexing">Linkdexing</h3>
+                <p class="case-type">Frontend, backend &amp; admin applications</p>
+                <p class="case-summary">
+                  A full-stack SaaS platform for managing URL indexing workflows, user accounts, credits, bulk
+                  operations, API-driven processing and administration.
+                </p>
+                <ul class="case-points">
+                  <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Credit-based accounts with bulk and drip-fed link submissions</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>JWT authentication, OTP verification and hashed passwords</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Separate admin application for managing users and credits</li>
+                </ul>
+                <p class="case-label">Stack</p>
+                <ul class="chips" aria-label="Technologies">
+                  <li class="chip">React</li>
+                  <li class="chip">Node.js</li>
+                  <li class="chip">Express</li>
+                  <li class="chip">MongoDB</li>
+                  <li class="chip">REST API</li>
+                  <li class="chip">JWT</li>
+                </ul>
+                <div class="case-actions">
+                  <a href="/work/linkdexing" class="btn btn--secondary btn--sm">
+                    View Case Study
+                    <svg class="icon icon--nudge" aria-hidden="true"><use href="/images/icons.svg#i-arrow-right" /></svg>
+                  </a>
+                  <a href="https://linkdexing-f.vercel.app/" class="text-link text-link--muted" target="_blank" rel="noopener">
+                    Live Website
+                    <svg class="icon icon--diag" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 03 — GreenUniMind -->
+            <article class="case reveal" aria-labelledby="case-greenunimind">
+              <div class="case-media">
+                <div class="frame">
+                  <div class="frame-bar">
+                    <div class="frame-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                    <div class="frame-url">greenunimind.com</div>
+                  </div>
+                  <img
+                    src="/images/work/greenunimind-800.webp"
+                    srcset="/images/work/greenunimind-800.webp 800w, /images/work/greenunimind.webp 1440w"
+                    sizes="(max-width: 980px) 90vw, 560px"
+                    width="1440"
+                    height="825"
+                    loading="lazy"
+                    decoding="async"
+                    alt="GreenUniMind homepage: 'Discover Sustainable Learning' hero with course categories, certifications and a Start Your Green Journey button"
+                  />
+                </div>
+              </div>
+              <div class="case-body">
+                <p class="case-meta"><span class="num">03</span><span>AI-Powered Learning Platform</span></p>
+                <h3 id="case-greenunimind">GreenUniMind</h3>
+                <p class="case-type">Sustainability education marketplace</p>
+                <p class="case-summary">
+                  An AI-powered learning platform combining interactive education, video/media functionality,
+                  intelligent features, payments and user-facing dashboards.
+                </p>
+                <ul class="case-points">
+                  <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Course marketplace with enrolment, certifications and AI features (Gemini)</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Video processing and HLS streaming with FFmpeg and Mux</li>
+                  <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Stripe payments and deployment on VPS infrastructure</li>
+                </ul>
+                <p class="case-label">Stack</p>
+                <ul class="chips" aria-label="Technologies">
+                  <li class="chip">React</li>
+                  <li class="chip">TypeScript</li>
+                  <li class="chip">Node.js</li>
+                  <li class="chip">Gemini AI</li>
+                  <li class="chip">Stripe</li>
+                  <li class="chip">Redux</li>
+                  <li class="chip">React Query</li>
+                </ul>
+                <div class="case-actions">
+                  <a href="/work/greenunimind" class="btn btn--secondary btn--sm">
+                    View Case Study
+                    <svg class="icon icon--nudge" aria-hidden="true"><use href="/images/icons.svg#i-arrow-right" /></svg>
+                  </a>
+                  <a href="https://www.greenunimind.com/" class="text-link text-link--muted" target="_blank" rel="noopener">
+                    Live Website
+                    <svg class="icon icon--diag" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- More work. -->
+          <div class="more-work reveal">
+            <h3 class="more-work-title">More work</h3>
+            <ul class="project-list">
+              <li class="project-row">
+                <div class="project-thumb">
+                  <img src="/images/work/pulse-thumb.webp" width="320" height="200" loading="lazy" decoding="async" alt="" />
+                </div>
+                <div>
+                  <h4>Pulse</h4>
+                  <p>Real-time messaging web app for verified iGaming professionals (private beta)</p>
+                </div>
+                <span class="stack">React · WebSockets</span>
+                <a href="https://pulse.affiliateroulette.com/chat" class="row-link" target="_blank" rel="noopener">
+                  Live app
+                  <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+                </a>
+              </li>
+              <!-- LankanAds (https://lankanfrontend.vercel.app/) is intentionally not listed: its public categories are
+                   adult-oriented and its API currently fails to load ads, which could put off business clients.
+                   To show it anyway, copy a <li class="project-row"> block, e.g. "Classifieds platform · Next.js". -->
+              <li class="project-row">
+                <div class="project-thumb">
+                  <img src="/images/work/loanbox-thumb.webp" width="320" height="149" loading="lazy" decoding="async" alt="" />
+                </div>
+                <div>
+                  <h4>HES LoanBox</h4>
+                  <p>Loan-management dashboard for applications, underwriting, collections and reporting</p>
+                </div>
+                <span class="stack">Next.js · React</span>
+                <a href="https://loanbox.vercel.app/" class="row-link" target="_blank" rel="noopener">
+                  Live demo
+                  <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+                </a>
+              </li>
+              <li class="project-row">
+                <div class="project-thumb">
+                  <img src="/images/work/algorethics-thumb.webp" width="320" height="149" loading="lazy" decoding="async" alt="" />
+                </div>
+                <div>
+                  <h4>Algorethics AI Sandbox</h4>
+                  <p>AI ethics &amp; compliance dashboard: policies, model evaluation and certification</p>
+                </div>
+                <span class="stack">React · Redux · Vite</span>
+                <a href="https://algorethics-ai-sandbox.vercel.app/" class="row-link" target="_blank" rel="noopener">
+                  Live demo
+                  <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+                </a>
+              </li>
+              <li class="project-row">
+                <div class="project-thumb">
+                  <img src="/images/work/kollaborator-thumb.webp" width="320" height="150" loading="lazy" decoding="async" alt="" />
+                </div>
+                <div>
+                  <h4>SI&lt;3&gt; Kollaborator</h4>
+                  <p>Community hub for collaborations, community calls and leadership classes</p>
+                </div>
+                <span class="stack">Next.js</span>
+                <a href="https://kolla-iota.vercel.app/" class="row-link" target="_blank" rel="noopener">
+                  Live site
+                  <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== Services ============================== -->
+      <section class="section" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Services</p>
+            <h2 id="services-title" class="h2">What I can help you build</h2>
+            <p class="lead">
+              For founders and teams who need one engineer to own the technical side — from a first release to fixing
+              what's already live.
             </p>
-            <div class="reviewer-info">
-              <div class="reviewer-avatar">
-                <i class='bx bxs-user-circle'></i>
+          </div>
+
+          <div class="services-grid reveal">
+            <article class="service">
+              <div class="service-top">
+                <span class="service-num">01</span>
+                <span class="service-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-rocket" /></svg></span>
               </div>
-              <div class="reviewer-details">
-                <h4>David Chen</h4>
-                <span>E-Commerce Business Owner</span>
+              <h3>SaaS &amp; MVP Development</h3>
+              <p>
+                Production-ready web applications from idea to deployment — built on a solid data model and a codebase
+                your next developer can actually work in.
+              </p>
+              <ul>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>MVPs and customer-facing SaaS</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Accounts, roles and permissions</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Stripe payments</li>
+              </ul>
+            </article>
+
+            <article class="service">
+              <div class="service-top">
+                <span class="service-num">02</span>
+                <span class="service-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-dashboard" /></svg></span>
               </div>
+              <h3>CRM &amp; Internal Systems</h3>
+              <p>
+                Custom dashboards, pipelines, roles, permissions and business workflows — built around how your team
+                actually works, not around a template.
+              </p>
+              <ul>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Custom CRMs and deal pipelines</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Admin panels and reporting dashboards</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Role-based access to sensitive data</li>
+              </ul>
+            </article>
+
+            <article class="service">
+              <div class="service-top">
+                <span class="service-num">03</span>
+                <span class="service-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-plug" /></svg></span>
+              </div>
+              <h3>AI &amp; API Integrations</h3>
+              <p>
+                AI automation, document processing and third-party integrations for existing products, so your team
+                spends less time on manual work.
+              </p>
+              <ul>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>LLM features with Claude and Gemini</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>PDF, Excel and CSV processing</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Payments, email and third-party APIs</li>
+              </ul>
+            </article>
+
+            <article class="service">
+              <div class="service-top">
+                <span class="service-num">04</span>
+                <span class="service-icon"><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-wrench" /></svg></span>
+              </div>
+              <h3>Existing App Rescue</h3>
+              <p>
+                Debug, optimize, complete and extend existing React, Next.js, Node.js and Supabase applications — and
+                leave them easier to maintain.
+              </p>
+              <ul>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Fixing bugs and broken workflows</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Performance and reliability improvements</li>
+                <li><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-check" /></svg>Finishing incomplete features</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== Technical capabilities ============================== -->
+      <section class="section" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Technical capabilities</p>
+            <h2 id="capabilities-title" class="h2">The stack behind the work</h2>
+            <p class="lead">The tools I use to build and run the applications above.</p>
+          </div>
+
+          <div class="cap-grid reveal">
+            <div class="cap-group">
+              <h3><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-dashboard" /></svg>Frontend</h3>
+              <ul class="chips">
+                <li class="chip">Next.js</li>
+                <li class="chip">React</li>
+                <li class="chip">TypeScript</li>
+                <li class="chip">JavaScript</li>
+                <li class="chip">Tailwind CSS</li>
+              </ul>
+            </div>
+            <div class="cap-group">
+              <h3><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-server" /></svg>Backend</h3>
+              <ul class="chips">
+                <li class="chip">Node.js</li>
+                <li class="chip">Express</li>
+                <li class="chip">REST APIs</li>
+              </ul>
+            </div>
+            <div class="cap-group">
+              <h3><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-layers" /></svg>Database &amp; Infrastructure</h3>
+              <ul class="chips">
+                <li class="chip">Supabase</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">MongoDB</li>
+                <li class="chip">Vercel</li>
+                <li class="chip">VPS deployment</li>
+              </ul>
+            </div>
+            <div class="cap-group">
+              <h3><svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-plug" /></svg>Specialized</h3>
+              <ul class="chips">
+                <li class="chip">AI Integrations</li>
+                <li class="chip">Authentication</li>
+                <li class="chip">Authorization</li>
+                <li class="chip">RLS</li>
+                <li class="chip">Payments</li>
+                <li class="chip">Document Automation</li>
+                <li class="chip">PDF Processing</li>
+                <li class="chip">API Integrations</li>
+              </ul>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="review-box">
-          <div class="review-content">
-            <div class="stars">
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star-half'></i>
+      <!-- ============================== Process ============================== -->
+      <section class="section" id="process" aria-labelledby="process-title">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Process</p>
+            <h2 id="process-title" class="h2">How I work</h2>
+            <p class="lead">A clear, predictable process that keeps you in the loop from the first call to launch.</p>
+          </div>
+
+          <ol class="process">
+            <li class="process-step reveal">
+              <span class="num">01</span>
+              <h3>Understand</h3>
+              <p>Understand the product, business requirements and current system.</p>
+            </li>
+            <li class="process-step reveal" style="--delay: 0.08s">
+              <span class="num">02</span>
+              <h3>Architect</h3>
+              <p>Plan the technical approach, workflows, database and integrations.</p>
+            </li>
+            <li class="process-step reveal" style="--delay: 0.16s">
+              <span class="num">03</span>
+              <h3>Build</h3>
+              <p>Develop iteratively with maintainable production-quality code.</p>
+            </li>
+            <li class="process-step reveal" style="--delay: 0.24s">
+              <span class="num">04</span>
+              <h3>Launch</h3>
+              <p>Test, deploy and make sure the application works reliably in production.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============================== Testimonials ==============================
+           Verbatim reviews from the Fiverr profile (https://www.fiverr.com/s/qbDVrj5), copied from the profile
+           on 2026-09-24. Names shown are the clients' public Fiverr usernames. The "…" in the second review marks
+           an excerpt; nothing else was edited. -->
+      <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="container">
+          <div class="section-head section-head--split reveal">
+            <div>
+              <p class="eyebrow">Testimonials</p>
+              <h2 id="testimonials-title" class="h2">What clients say</h2>
+              <p class="lead">From 38 reviews on Fiverr — 37 five-star, 1 four-star.</p>
             </div>
-            <p class="review-text">
-              "Working with Muhammad was a pleasure. He understood our requirements perfectly and delivered a stunning WordPress website for our business. Great communication and excellent results!"
+            <a href="https://www.fiverr.com/s/qbDVrj5" class="text-link text-link--muted" target="_blank" rel="noopener">
+              Read all reviews on Fiverr
+              <svg class="icon icon--diag" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+            </a>
+          </div>
+          <div class="testimonials reveal">
+            <figure class="testimonial">
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+              <blockquote>
+                “Amazing developer. Best we have worked with, kind, understanding, goes above and beyond, and is very
+                good at his work. Will be hiring again!”
+              </blockquote>
+              <figcaption>
+                <strong>splatterss · United States</strong>
+                <span>Fiverr · Custom Websites · 4-month project</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial">
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+              <blockquote>
+                “M Mujeeb Akbar is such a pleasure to work with. He is really educated on SAAS platforms, html, and knows
+                how to get the job … done. He has exceeded expectations over and over again and I would highly recommend
+                him for your next project!”
+              </blockquote>
+              <figcaption>
+                <strong>edaffiliate · Romania</strong>
+                <span>Fiverr · Full Stack Web Applications</span>
+              </figcaption>
+            </figure>
+            <figure class="testimonial">
+              <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+              <blockquote>
+                “A great freelancer to work with. Delivered a fully functional web app that matched a detailed spec,
+                communicated clearly throughout, and handled revision requests quickly and thoroughly. Responsive,
+                professional, and clearly cares about doing the job right. Highly recommend.”
+              </blockquote>
+              <figcaption>
+                <strong>saksh010 · India</strong>
+                <span>Fiverr · Custom Websites</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== About ============================== -->
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container about-grid">
+          <aside class="about-aside reveal">
+            <div class="about-photo">
+              <img
+                src="/images/profile.webp"
+                width="560"
+                height="560"
+                loading="lazy"
+                decoding="async"
+                alt="Portrait of Muhammad Mujeeb Akbar"
+              />
+            </div>
+            <dl class="about-facts">
+              <div><dt>Focus</dt><dd>SaaS, CRMs &amp; automation</dd></div>
+              <div><dt>Core stack</dt><dd>Next.js · Node.js · Supabase</dd></div>
+              <div><dt>Clients in</dt><dd>US, Romania, India, Costa Rica &amp; more</dd></div>
+              <div><dt>Freelancing</dt><dd>Since Sep 2023 · Fiverr</dd></div>
+              <div><dt>Education</dt><dd>B.S. Information Technology, 2021–2025</dd></div>
+            </dl>
+          </aside>
+
+          <div class="about-body reveal">
+            <p class="eyebrow">About</p>
+            <h2 id="about-title" class="h2">Building software that solves real business problems.</h2>
+            <div style="margin-top: 28px">
+              <p class="about-intro">
+                I'm Muhammad Mujeeb Akbar, a full-stack developer focused on SaaS products, CRM systems and business
+                automation.
+              </p>
+              <p>
+                I work across the product lifecycle — from frontend interfaces and backend APIs to databases,
+                authentication, integrations and production deployment.
+              </p>
+              <p>
+                I especially enjoy taking existing applications with broken workflows, performance problems or unfinished
+                features and turning them into reliable production systems.
+              </p>
+            </div>
+
+            <div style="margin-top: 32px">
+              <a href="https://www.linkedin.com/in/m-m-akbar/" class="text-link" target="_blank" rel="noopener">
+                More on LinkedIn
+                <svg class="icon icon--diag" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== Final CTA ============================== -->
+      <section class="section" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="final-cta reveal">
+            <p class="eyebrow">Let's work together</p>
+            <h2 id="cta-title">Have a SaaS product that needs to be built or fixed?</h2>
+            <p class="lead">
+              Tell me what you're working on. I'll help you understand the technical approach and how we can move it
+              forward.
             </p>
-            <div class="reviewer-info">
-              <div class="reviewer-avatar">
-                <i class='bx bxs-user-circle'></i>
-              </div>
-              <div class="reviewer-details">
-                <h4>Emma Williams</h4>
-                <span>Marketing Director</span>
-              </div>
+            <div class="actions">
+              <a href="#contact" class="btn btn--primary">
+                Discuss Your Project
+                <svg class="icon icon--nudge" aria-hidden="true"><use href="/images/icons.svg#i-arrow-right" /></svg>
+              </a>
+              <a href="#" class="btn btn--secondary" data-link="email" hidden>
+                <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-mail" /></svg>
+                Send Me an Email
+              </a>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="review-box">
-          <div class="review-content">
-            <div class="stars">
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
+      <!-- ============================== Contact ============================== -->
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-panel reveal">
+            <div class="contact-intro">
+              <p class="eyebrow">Contact</p>
+              <h2 id="contact-title">Tell me about your project</h2>
+              <p class="lead">
+                Share a few details about what you're building or fixing. Every enquiry gets a personal reply.
+              </p>
+
+              <div class="contact-direct">
+                <a href="#" data-link="email" hidden>
+                  <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-mail" /></svg>
+                  <span><span class="label">Send me an email</span><span class="value" data-email-text></span></span>
+                  <svg class="icon icon--diag" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+                </a>
+                <a href="https://wa.me/message/QE7R322HXVBQM1" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-message" /></svg>
+                  <span><span class="label">Prefer chat?</span><span class="value">Message me on WhatsApp</span></span>
+                  <svg class="icon icon--diag" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/m-m-akbar/" target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-linkedin" /></svg>
+                  <span><span class="label">Connect</span><span class="value">LinkedIn</span></span>
+                  <svg class="icon icon--diag" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up-right" /></svg>
+                </a>
+              </div>
+
+              <div class="next-steps">
+                <h3>What happens next</h3>
+                <ol>
+                  <li>I read your project details and reply personally.</li>
+                  <li>We have a short call about scope, timeline and budget.</li>
+                  <li>You get a clear proposal with the recommended approach.</li>
+                </ol>
+              </div>
             </div>
-            <p class="review-text">
-              "Muhammad is a talented developer with strong skills in both frontend and backend development. Our task management system works flawlessly. Very professional and reliable!"
+
+            <form class="form" action="/api/contact" method="post" novalidate data-contact-form>
+              <div class="form-row">
+                <div class="field">
+                  <label for="cf-name">Name <span aria-hidden="true">*</span></label>
+                  <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="100" required aria-describedby="cf-name-err" />
+                  <p class="field-error" id="cf-name-err"></p>
+                </div>
+                <div class="field">
+                  <label for="cf-email">Email <span aria-hidden="true">*</span></label>
+                  <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="200" required aria-describedby="cf-email-err" />
+                  <p class="field-error" id="cf-email-err"></p>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="cf-company">Company <span class="optional">(optional)</span></label>
+                  <input id="cf-company" name="company" type="text" autocomplete="organization" maxlength="150" />
+                </div>
+                <div class="field">
+                  <label for="cf-budget">Approximate budget <span class="optional">(optional)</span></label>
+                  <select id="cf-budget" name="budget">
+                    <option value="">Prefer not to say</option>
+                    <option>Under $1,000</option>
+                    <option>$1,000–$3,000</option>
+                    <option>$3,000–$5,000</option>
+                    <option>$5,000+</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="cf-project">What are you building? <span aria-hidden="true">*</span></label>
+                <select id="cf-project" name="projectType" required aria-describedby="cf-project-err">
+                  <option value="">Select a project type</option>
+                  <option>New SaaS product or MVP</option>
+                  <option>CRM or internal system</option>
+                  <option>AI or API integration</option>
+                  <option>Fix or improve an existing app</option>
+                  <option>Something else</option>
+                </select>
+                <p class="field-error" id="cf-project-err"></p>
+              </div>
+
+              <div class="field">
+                <label for="cf-message">Message <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="cf-message"
+                  name="message"
+                  rows="6"
+                  minlength="20"
+                  maxlength="5000"
+                  required
+                  placeholder="What does the product do, where is it today, and what do you need help with?"
+                  aria-describedby="cf-message-err"
+                ></textarea>
+                <p class="field-error" id="cf-message-err"></p>
+              </div>
+
+              <!-- Spam trap: hidden from people, often filled in by bots. -->
+              <div class="form-hp" aria-hidden="true">
+                <label for="cf-website">Website</label>
+                <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div class="form-foot">
+                <button type="submit" class="btn btn--primary btn--block">
+                  <span data-submit-label>Send Project Details</span>
+                  <svg class="icon icon--nudge" aria-hidden="true"><use href="/images/icons.svg#i-arrow-right" /></svg>
+                </button>
+                <p class="form-note">Fields marked * are required. Your details are only used to reply to your enquiry.</p>
+                <div class="form-status" role="status" aria-live="polite" data-form-status></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================== Footer ============================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a href="/" class="brand">
+              <span class="brand-mark" aria-hidden="true">MA</span>
+              M M Akbar
+            </a>
+            <p class="footer-tagline">
+              Full-stack SaaS developer building CRMs, dashboards and AI-powered business systems.
             </p>
-            <div class="reviewer-info">
-              <div class="reviewer-avatar">
-                <i class='bx bxs-user-circle'></i>
-              </div>
-              <div class="reviewer-details">
-                <h4>Michael Brown</h4>
-                <span>Project Manager</span>
-              </div>
+          </div>
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h2>Work</h2>
+              <ul>
+                <li><a href="/work/concord-deal">Concord Deal</a></li>
+                <li><a href="/work/linkdexing">Linkdexing</a></li>
+                <li><a href="/work/greenunimind">GreenUniMind</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h2>Navigate</h2>
+              <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h2>Connect</h2>
+              <ul>
+                <li>
+                  <a href="https://github.com/MMAkbar993" target="_blank" rel="noopener">
+                    <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-github" /></svg>GitHub
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/m-m-akbar/" target="_blank" rel="noopener">
+                    <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-linkedin" /></svg>LinkedIn
+                  </a>
+                </li>
+                <li data-link-item="fiverr" hidden>
+                  <a href="#" data-link="fiverr" target="_blank" rel="noopener">
+                    <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-briefcase" /></svg>Fiverr
+                  </a>
+                </li>
+                <li data-link-item="email" hidden>
+                  <a href="#" data-link="email">
+                    <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-mail" /></svg>Email
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/message/QE7R322HXVBQM1" target="_blank" rel="noopener">
+                    <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-message" /></svg>WhatsApp
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-
-        <div class="review-box">
-          <div class="review-content">
-            <div class="stars">
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-            </div>
-            <p class="review-text">
-              "Excellent work! Muhammad created our landing page with a modern design and smooth animations. The page converts visitors into customers effectively. Will definitely work with him again!"
-            </p>
-            <div class="reviewer-info">
-              <div class="reviewer-avatar">
-                <i class='bx bxs-user-circle'></i>
-              </div>
-              <div class="reviewer-details">
-                <h4>Lisa Anderson</h4>
-                <span>Startup Founder</span>
-              </div>
-            </div>
-          </div>
+        <div class="footer-bottom">
+          <p>&copy; <span data-year>2026</span> Muhammad Mujeeb Akbar</p>
+          <a href="#main" class="text-link text-link--muted">
+            Back to top
+            <svg class="icon" aria-hidden="true"><use href="/images/icons.svg#i-arrow-up" /></svg>
+          </a>
         </div>
-
-        <div class="review-box">
-          <div class="review-content">
-            <div class="stars">
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-            </div>
-            <p class="review-text">
-              "Muhammad's expertise in web development is impressive. He built our blog application with clean code and great functionality. Fast delivery and excellent support. Highly satisfied!"
-            </p>
-            <div class="reviewer-info">
-              <div class="reviewer-avatar">
-                <i class='bx bxs-user-circle'></i>
-              </div>
-              <div class="reviewer-details">
-                <h4>Robert Martinez</h4>
-                <span>Content Creator</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-
-      <form action="#">
-        <div class="input-box">
-          <div class="input-field">
-            <input type="text" placeholder="Full Name" required />
-            <span class="focus"></span>
-          </div>
-          <div class="input-field">
-            <input type="text" placeholder="Email Address " required />
-            <span class="focus"></span>
-          </div>
-        </div>
-
-        <div class="input-box">
-          <div class="input-field">
-            <input type="number" placeholder="Mobile Number" required />
-            <span class="focus"></span>
-          </div>
-          <div class="input-field">
-            <input type="text" placeholder="Email subject" required />
-            <span class="focus"></span>
-          </div>
-        </div>
-
-        <div class="textarea-field">
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <span class="focus"></span>
-        </div>
-
-        <div class="btn-box btns">
-          <button
-            type="submit"
-            class="btn"
-            style="margin-top: 2rem; cursor: pointer"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
-    </section>
-
-    <!-- footer design -->
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Copyright &copy;2023 by M M Akbar|All rights Reserved</p>
-      </div>
-
-      <div class="footer-iconTop">
-        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
     </footer>
-
-    <script src="js/script.js"></script>
   </body>
 </html>
